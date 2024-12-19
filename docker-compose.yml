@@ -10,6 +10,4 @@ services:
       - ./api:/api
     environment:
       - DATABASE_URL=mysql+pymysql://ruvs:Emmtp157@10.1.75.157:3306/ruvs
-    depends_on:
-      - mysql_db
     command: ["sh", "-c", "python main.py && uvicorn main:app --host 0.0.0.0 --port 8000 --reload"]
