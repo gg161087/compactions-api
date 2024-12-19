@@ -1,0 +1,76 @@
+# Entornos virtuales
+venv/
+.env/
+
+# Archivos de configuración y secretos
+*.env
+*.secret
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de bases de datos locales
+*.sqlite3
+*.db
+
+# Cachés de Python
+*.py[cod]
+**/__pycache__/
+instance/
+
+# Configuración de editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos generados por tests
+*.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.log
+pytest_cache/
+.cache/
+
+# Archivos de Docker
+.dockerignore
+docker-compose.override.yml
+
+# Archivos de compilación y logs
+dist/
+build/
+*.egg-info/
+logs/
+*.log
+
+# Archivos estáticos generados
+staticfiles/
+mediafiles/
+uploads/
+
+# Node.js (si usas herramientas como Webpack para frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Otros
+.DS_Store
+Thumbs.db
+
+# Ignorar la carpeta de FastAPI si está dentro de /api/
+api/__pycache__/
+api/*.pyc
+api/*.pyo
+
+# Si usas un entorno virtual específico dentro de /api/
+api/venv/
+api/.env
+
+# Cachés de test (si usas herramientas dentro de /api/)
+api/.tox/
+api/.nox/
+api/.coverage/
+api/.hypothesis/

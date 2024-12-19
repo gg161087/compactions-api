@@ -1,0 +1,59 @@
+compactation-api/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   │
+│   ├── models/                    # Modelos de SQLAlchemy
+│   │   ├── __init__.py
+│   │   ├── base.py                # Base declarative de SQLAlchemy
+│   │   ├── vehicle_model.py       # Modelo Vehiculo
+│   │   ├── act_model.py           # Modelo ActaCompactacion
+│   │   ├── persona_model.py       # Modelo Persona
+│   │   ├── predio_model.py        # Modelo Predio
+│   │   └── distrito_model.py      # Modelo Distrito
+│   │
+│   ├── schemas/                   # Esquemas de Pydantic
+│   │   ├── __init__.py
+│   │   ├── vehicle_schema.py      # Schemas para Vehiculo
+│   │   ├── act_schema.py          # Schemas para Actas
+│   │   ├── persona_schema.py      # Schemas para Persona
+│   │   ├── predio_schema.py       # Schemas para Predio
+│   │   └── distrito_schema.py     # Schemas para Distrito
+│   │
+│   ├── repositories/              # Acceso a la base de datos
+│   │   ├── __init__.py
+│   │   ├── vehicle_repo.py        # Funciones de consulta para Vehiculo
+│   │   ├── act_repo.py            # Funciones de consulta para ActaCompactacion
+│   │   ├── persona_repo.py        # Funciones de consulta para Persona
+│   │   ├── predio_repo.py         # Funciones de consulta para Predio
+│   │   └── distrito_repo.py       # Funciones de consulta para Distrito
+│   │
+│   ├── controllers/               # Controladores
+│   │   ├── __init__.py
+│   │   ├── vehicle_controller.py  # Lógica para Vehiculos
+│   │   ├── act_controller.py      # Lógica para Actas
+│   │   ├── persona_controller.py  # Lógica para Personas
+│   │   ├── predio_controller.py   # Lógica para Predios
+│   │   └── distrito_controller.py # Lógica para Distritos
+│   │
+│   ├── views/                     # Endpoints
+│   │   ├── __init__.py
+│   │   ├── vehicle_view.py        # Rutas Vehiculo
+│   │   ├── act_view.py            # Rutas Actas
+│   │   ├── persona_view.py        # Rutas Personas
+│   │   ├── predio_view.py         # Rutas Predios
+│   │   └── distrito_view.py       # Rutas Distritos
+│   │
+│   ├── settings/                  # Configuraciones generales
+│   │   ├── __init__.py
+│   │   ├── config.py              # Configuración con dotenv
+│   │   └── database.py            # Configuración de la base de datos
+│   │
+│   └── utils/                     # Funciones auxiliares
+│       ├── __init__.py
+│       └── common.py
+│
+├── .env                           # Variables de entorno
+├── .gitignore
+├── requirements.txt
+└── README.md
